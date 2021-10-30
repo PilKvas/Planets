@@ -1,0 +1,236 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/starter-code/assets/planet-mercury.svg">
+  <title>Mercury</title>
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<body class = "body">
+  
+  <!-- Header-->
+  <header class = "header">
+    <div class="header__inner">
+      <div class="menu-burger" onclick = "toggleMenu();">
+        <svg style = "color:grey;" xmlns="http://www.w3.org/2000/svg" width="24" height="17"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/></g></svg>
+      </div>
+      <div class="header__logo">
+       <h2><a href = "#">The planets</a></h2>
+      </div>
+
+      <nav class="menu">
+        <a href="index.html" class="planet_mercury_color nav__link" id = "Planet1">Mercury</a>
+        <a href="venus.html" class="nav__link" id = "Planet2">Venus</a>
+        <a href="earth.html" class="nav__link" id = "Planet3">Earth</a>
+        <a href="mars.html" class="nav__link" id = "Planet4">Mars</a>
+        <a href="jupiter.html" class="nav__link" id = "Planet5">Jupiter</a>
+        <a href="saturn.html" class="nav__link" id = "Planet6">Saturn</a>
+        <a href="uranus.html" class="nav__link" id = "Planet7">Uranus</a>
+        <a href="neptune.html" class="nav__link" id = "Planet8">Neptune</a>
+      </nav>
+    </div>
+  </header>
+
+<!--Mobile menu -->
+  <div class = "mobile-buttons">
+    <button class = "info_mob_mercury" onclick =  "my_click1();" id = "button-click"> Overview</button>
+    <button class = "info_mob_mercury" onclick = "my_click2();">Structure</button>
+    <button  class = "info_mob_mercury" onclick =  "my_click3();"> Surface </button>
+  </div>
+<!---------------------------------------------------------------->
+
+
+<!---------------------------Main-mobile------------------------------------->
+
+<main>
+  <div class="main__inner">
+    <div class="picture__mobile">
+      <img class = "planet" src = "https://planets-fact-site-nu.vercel.app/assets/planet-mercury.svg" width="200px" height="200px" id = "image_mob">
+      <img class = "surface_mob" src = "https://planets-fact-site-nu.vercel.app/assets/geology-mercury.png" width = "100px" height = "100px">
+    </div>
+    <div class="text__mobile">
+      <h1 class = "hero">Mercury</h1>
+      <p id = "modify_mob">
+        Mercury is the smallest planet in the Solar System and the closest 
+        to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+        shortest of all the Sun's planets. Mercury is one of four terrestrial 
+        planets in the Solar System, and is a rocky body like Earth.</p>
+
+       <p>Source:  <a class = "wiki" href = "https://en.wikipedia.org/wiki/Earth" id = "link"> Wikipedia <svg class = "turn_white" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="var(--secondary-color)" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".75"/></svg></a></p>
+    </div>
+  </div>
+  <section class = "statistics__mobile">
+    <div class="statistics__inner">
+      <div class="stats">
+        <span class = "topic">Rotation Time</span>
+        <span class = "discription">58.6 Days</span></div>
+      <div class="stats">
+        <span class = "topic">Revolution Time</span>
+        <span class = "discription">87.97 Days</span></div>
+      <div class="stats"><span class = "topic">Radius</span>
+        <span class = "discription">2,439.7 KM</span>
+      </div>
+      <div class="stats"> <span class = "topic">Average Temp.</span>
+        <span class = "discription"> 430°c</span>
+      </div>
+    </div>
+</section>
+<div class="space"></div>
+<div class="sidebar">
+  <div class="sidebar_inner">
+    <ul>
+      <a href = "index.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-mercury.svg" width="45px" height="45px"><span>Mercury</span></li></a>
+      <a href = "venus.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-venus.svg" width="45px" height="45px"><span>Venus</span></li></a>
+      <a href = "earth.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-earth.svg" width="45px" height="45px"><span>Earth</span></li></a>
+      <a href = "mars.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-mars.svg" width="45px" height="45px"><span>Mars</span></li></a>
+      <a href = "jupiter.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-jupiter.svg" width="45px" height="45px"><span>Jupiter</span></li></a>
+      <a href = "saturn.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-saturn.svg" width="45px" height="45px"><span>Saturn</span></li></a>
+      <a href = "uranus.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-uranus.svg" width="45px" height="45px"><span>Uranus</span></li></a>
+      <a href = "neptune.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-neptune.svg" width="45px" height="45px"><span>Neptune</span></li></a>
+    <ul>
+  </div>
+</div>
+</main>
+
+
+<!---------------------------------------------------------------------------->
+<!-- MAIN -->
+
+  <section class="main">
+  <div class="container">
+    <div class="section__inner">
+      <div class="picture">
+        <img class = "planet" src = "https://planets-fact-site-nu.vercel.app/assets/planet-mercury.svg" width="500px" height="500px" id = "image">
+        <img class = "planet-surface" src = "https://planets-fact-site-nu.vercel.app/assets/geology-mercury.png" width = "200px" height = "200px">
+      </div>
+      <div class="text">
+        <h1>Mercury</h1>
+        <p id = "modify">
+          Mercury is the smallest planet in the Solar System and the closest 
+          to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+          shortest of all the Sun's planets. Mercury is one of four terrestrial 
+          planets in the Solar System, and is a rocky body like Earth.</p>
+
+         <p>Source:  <a class = "wiki" href = "https://en.wikipedia.org/wiki/Earth" id = "link"> Wikipedia <svg class = "turn_white" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="var(--secondary-color)" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".75"/></svg></a></p>
+
+        <div class="buttons">
+          <button class = "info_mercury" onclick =  "my_click1();" id = "button-click"> Overview</button>
+          <button class = "info_mercury" onclick = "my_click2();"> Internal Structure</button>
+          <button  class = "info_mercury" onclick =  "my_click3();"> Surface Geology</button>
+        </div>
+      </div>
+    </div>
+
+    <section class = "statistics">
+        <div class="statistics__inner">
+          <div class="stats">
+            <span class = "topic">Rotation Time</span>
+            <span class = "discription">58.6 Days</span></div>
+          <div class="stats">
+            <span class = "topic">Revolution Time</span>
+            <span class = "discription">87.97 Days</span></div>
+          <div class="stats"><span class = "topic">Radius</span>
+            <span class = "discription"> 2,439.7 KM</span>
+          </div>
+          <div class="stats"> <span class = "topic">Average Temp.</span>
+            <span class = "discription">  430°c</span>
+          </div>
+        </div>
+    </section>
+  </div>
+  </section>
+  
+  <script>
+    /* PC */
+    function my_click1()
+                {
+                document.getElementById("image").src="https://planets-fact-site-nu.vercel.app/assets/planet-mercury.svg";
+                document.getElementById("image_mob").src="https://planets-fact-site-nu.vercel.app/assets/planet-mercury.svg";
+                document.getElementById('modify').innerHTML="Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth."
+                document.getElementById('modify_mob').innerHTML="Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth."
+                document.getElementById('link').href = "https://en.wikipedia.org/wiki/Mercury_(planet)"
+                };
+    function my_click2()
+                {
+                
+                document.getElementById("image").src="https://planets-fact-site-nu.vercel.app/assets/planet-mercury-internal.svg";
+                document.getElementById("image_mob").src="https://planets-fact-site-nu.vercel.app/assets/planet-mercury-internal.svg";
+                document.getElementById('modify').innerHTML="Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density."
+                document.getElementById('modify_mob').innerHTML="Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density."
+                document.getElementById('link').href = "https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure";
+                };
+    function my_click3()
+                {
+                  const toggleMenu = document.querySelector(".planet-surface");
+                  toggleMenu.classList.toggle("show")
+                  const button_click = document.querySelector(".surface_mob");
+                  button_click.classList.toggle("active");
+                  document.getElementById('modify').innerHTML="Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s."
+                  document.getElementById('modify_mob').innerHTML="Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s."
+                  document.getElementById('link').href = "https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology";
+                }
+    function toggleMenu(){
+                const sidebar= document.querySelector(".sidebar");
+                sidebar.classList.toggle("active")
+                const overflow = document.querySelector(".body")
+                overflow.classList.toggle("overflow-y")
+            }
+    
+    /* Mobile */
+    </script>
+  <div class = "trash">
+  Mercury
+
+  <!-- Overview Content Start -->
+
+  Mercury is the smallest planet in the Solar System and the closest 
+  to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+  shortest of all the Sun's planets. Mercury is one of four terrestrial 
+  planets in the Solar System, and is a rocky body like Earth.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+  Mercury appears to have a solid silicate crust and mantle overlying a 
+  solid, iron sulfide outer core layer, a deeper liquid core layer, and 
+  a solid inner core. The planet's density is the second highest in the 
+  Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+  Mercury's surface is similar in appearance to that of the Moon, showing 
+  extensive mare-like plains and heavy cratering, indicating that it has 
+  been geologically inactive for billions of years. It is more heterogeneous 
+  than either Mars's or the Moon’s.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology -->
+
+  <!-- Surface Geology Content End -->
+
+  01 Overview
+  02 Internal Structure
+  03 Surface Geology
+
+  Rotation Time
+  58.6 Days
+
+  Revolution Time
+  87.97 Days
+
+  Radius
+  2,439.7 KM
+
+  Average Temp.
+  430°c
+</div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://planets-fact-site-nu.vercel.app/assets/planet-neptune.svg">
+  <link rel = "stylesheet" href = "style.css">
+  <title>Neptune</title>
+</head>
+<body class = "body">
+
+  <!-- Header-->
+  <header class = "header">
+    <div class="header__inner">
+      <div class="menu-burger" onclick = "toggleMenu();">
+        <svg style = "color:grey;" xmlns="http://www.w3.org/2000/svg" width="24" height="17"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/></g></svg>
+      </div>
+      <div class="header__logo">
+       <h2><a href = "#">The planets</a></h2>
+      </div>
+  
+      <nav class="menu">
+        <a href="index.html" class="nav__link" id = "Planet1">Mercury</a>
+        <a href="venus.html" class="nav__link" id = "Planet2">Venus</a>
+        <a href="earth.html" class="nav__link" id = "Planet3">Earth</a>
+        <a href="mars.html" class="nav__link" id = "Planet4">Mars</a>
+        <a href="jupiter.html" class="nav__link" id = "Planet5">Jupiter</a>
+        <a href="saturn.html" class="nav__link" id = "Planet6">Saturn</a>
+        <a href="uranus.html" class="nav__link" id = "Planet7">Uranus</a>
+        <a href="neptune.html" class="planet_neptune_color nav__link" id = "Planet8">Neptune</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!--Mobile menu -->
+  <div class = "mobile-buttons">
+    <button class = "info_mob_neptune" onclick =  "my_click1();" id = "button-click"> Overview</button>
+    <button class = "info_mob_neptune" onclick = "my_click2();">Structure</button>
+    <button  class = "info_mob_neptune" onclick =  "my_click3();"> Surface </button>
+  </div>
+  <!---------------------------------------------------------------->
+  
+  
+  <!---------------------------Main-mobile------------------------------------->
+  
+  <main>
+  <div class="main__inner">
+    <div class="picture__mobile">
+      <img class = "planet" src = "https://planets-fact-site-nu.vercel.app/assets/planet-neptune.svg" width="300px" height="300px" id = "image_mob">
+      <img class = "surface_mob" src = "https://planets-fact-site-nu.vercel.app/geology-neptune.png" width = "80px" height = "80px">
+    </div>
+    <div class="text__mobile">
+      <h1 class = "hero">Neptune</h1>
+      <p id = "modify_mob">
+        Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
+        System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
+        and the densest giant planet. It is 17 times the mass of Earth, more massive than 
+        its near-twin Uranus..</p>
+  
+       <p>Source:  <a class = "wiki" href = "https://en.wikipedia.org/wiki/Neptune" id = "link"> Wikipedia <svg class = "turn_white" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="var(--secondary-color)" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".75"/></svg></a></p>
+    </div>
+  </div>
+  <section class = "statistics__mobile">
+    <div class="statistics__inner">
+      <div class="stats">
+        <span class = "topic">Rotation Time</span>
+        <span class = "discription">16.08 Hours</span></div>
+      <div class="stats">
+        <span class = "topic">Revolution Time</span>
+        <span class = "discription">164.79 Years</span></div>
+      <div class="stats"><span class = "topic">Radius</span>
+        <span class = "discription">164.79 Years</span>
+      </div>
+      <div class="stats"> <span class = "topic">Average Temp.</span>
+        <span class = "discription">-201°c</span>
+      </div>
+    </div>
+  </section>
+  <div class="sidebar">
+  <div class="sidebar_inner">
+    <ul>
+      <a href = "index.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-mercury.svg" width="45px" height="45px"><span>Mercury</span></li></a>
+      <a href = "venus.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-venus.svg" width="45px" height="45px"><span>Venus</span></li></a>
+      <a href = "earth.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-earth.svg" width="45px" height="45px"><span>Earth</span></li></a>
+      <a href = "mars.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-mars.svg" width="45px" height="45px"><span>Mars</span></li></a>
+      <a href = "jupiter.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-jupiter.svg" width="45px" height="45px"><span>Jupiter</span></li></a>
+      <a href = "saturn.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-saturn.svg" width="45px" height="45px"><span>Saturn</span></li></a>
+      <a href = "uranus.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-uranus.svg" width="45px" height="45px"><span>Uranus</span></li></a>
+      <a href = "neptune.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-neptune.svg" width="45px" height="45px"><span>Neptune</span></li></a>
+    <ul>
+  </div>
+  </div>
+  </main>
+  
+  
+  <!---------------------------------------------------------------------------->
+  <!-- MAIN -->
+  
+  <section class="main">
+  <div class="container">
+    <div class="section__inner">
+      <div class="picture">
+        <img class = "planet" src = "https://planets-fact-site-nu.vercel.app/assets/planet-neptune.svg" width="500px" height="500px" id = "image">
+        <img class = "planet-surface" src = "https://planets-fact-site-nu.vercel.app/assets/geology-neptune.png" width = "200px" height = "200px">
+      </div>
+      <div class="text">
+        <h1>Neptune</h1>
+        <p id = "modify">
+          Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
+          System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
+          and the densest giant planet. It is 17 times the mass of Earth, more massive than 
+          its near-twin Uranus..</p>
+  
+         <p>Source:  <a class = "wiki" href = "https://en.wikipedia.org/wiki/Neptune" id = "link"> Wikipedia <svg class = "turn_white" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="var(--secondary-color)" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".75"/></svg></a></p>
+  
+        <div class="buttons">
+          <button class = "info_neptune" onclick =  "my_click1();" id = "button-click"> Overview</button>
+          <button class = "info_neptune" onclick = "my_click2();"> Internal Structure</button>
+          <button  class = "info_neptune" onclick =  "my_click3();"> Surface Geology</button>
+        </div>
+      </div>
+    </div>
+  
+    <section class = "statistics">
+        <div class="statistics__inner">
+          <div class="stats">
+            <span class = "topic">Rotation Time</span>
+            <span class = "discription"> 16.08 Hours</span></div>
+          <div class="stats">
+            <span class = "topic">Revolution Time</span>
+            <span class = "discription">164.79 Years</span></div>
+          <div class="stats"><span class = "topic">Radius</span>
+            <span class = "discription">164.79 Years</span>
+          </div>
+          <div class="stats"> <span class = "topic">Average Temp.</span>
+            <span class = "discription">-201°c</span>
+          </div>
+        </div>
+    </section>
+  </div>
+  </section>
+  
+  <script>
+    /* PC */
+    function my_click1()
+                {
+                document.getElementById("image").src="https://planets-fact-site-nu.vercel.app/assets/planet-neptune.svg";
+                document.getElementById("image_mob").src="https://planets-fact-site-nu.vercel.app/assets/planet-neptune.svg";
+                document.getElementById('modify').innerHTML="Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus."
+                document.getElementById('modify_mob').innerHTML="Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus."
+                document.getElementById('link').href = "https://en.wikipedia.org/wiki/Neptune"
+                };
+    function my_click2()
+                {
+                
+                document.getElementById("image").src="https://planets-fact-site-nu.vercel.app/assets/planet-neptune-internal.svg";
+                document.getElementById("image_mob").src="https://planets-fact-site-nu.vercel.app/assets/planet-neptune-internal.svg";
+                document.getElementById('modify').innerHTML="Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions."
+                document.getElementById('modify_mob').innerHTML="Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing concentrations of methane, ammonia and water are found in the lower regions."
+                document.getElementById('link').href = "https://en.wikipedia.org/wiki/Neptune#Internal_structure";
+                };
+    function my_click3()
+                {
+                  const toggleMenu = document.querySelector(".planet-surface");
+                  toggleMenu.classList.toggle("show")
+                  const button_click = document.querySelector(".surface_mob");
+                  button_click.classList.toggle("active");
+                  document.getElementById('modify').innerHTML="Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum."
+                  document.getElementById('modify_mob').innerHTML="Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red and infrared portion of the spectrum."
+                  document.getElementById('link').href = "https://en.wikipedia.org/wiki/Neptune#Atmosphere";
+                }
+    function toggleMenu(){
+                const sidebar= document.querySelector(".sidebar");
+                sidebar.classList.toggle("active")
+                const overflow = document.querySelector(".body")
+                overflow.classList.toggle("overflow-y")
+            }
+    
+    /* Mobile */
+    </script>
+  
+  
+
+
+
+
+
+
+
+  <div class="trash">
+  Neptune
+
+  <!-- Overview Content Start -->
+
+  Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
+  System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
+  and the densest giant planet. It is 17 times the mass of Earth, more massive than 
+  its near-twin Uranus.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+  Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% 
+  to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. 
+  Increasing concentrations of methane, ammonia and water are found in the lower regions.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+  Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also 
+  present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in 
+  the red and infrared portion of the spectrum.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Atmosphere -->
+
+  <!-- Surface Geology Content End -->
+
+  01 Overview
+  02 Internal Structure
+  03 Surface Geology
+
+  Rotation Time
+  16.08 Hours
+
+  Revolution Time
+  164.79 Years
+
+  Radius
+  24,622 KM
+
+  Average Temp.
+  -201°c
+</div>
+</body>
+</html>

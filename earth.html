@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/starter-code/assets/planet-earth.svg">
+  <title>Earth </title>
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<body class = "body">
+  
+  <!-- Header-->
+  <header class = "header">
+    <div class="header__inner">
+      <div class="menu-burger" onclick = "toggleMenu();">
+        <svg style = "color:grey;" xmlns="http://www.w3.org/2000/svg" width="24" height="17"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"/></g></svg>
+      </div>
+      <div class="header__logo">
+       <h2><a href = "#">The planets</a></h2>
+      </div>
+
+      <nav class="menu">
+        <a href="index.html" class="nav__link" id = "Planet1">Mercury</a>
+        <a href="venus.html" class="nav__link" id = "Planet2">Venus</a>
+        <a href="earth.html" class="planet_earth_color nav__link" id = "Planet3">Earth</a>
+        <a href="mars.html" class="nav__link" id = "Planet4">Mars</a>
+        <a href="jupiter.html" class="nav__link" id = "Planet5">Jupiter</a>
+        <a href="saturn.html" class="nav__link" id = "Planet6">Saturn</a>
+        <a href="uranus.html" class="nav__link" id = "Planet7">Uranus</a>
+        <a href="neptune.html" class="nav__link" id = "Planet8">Neptune</a>
+      </nav>
+    </div>
+  </header>
+
+<!--Mobile menu -->
+  <div class = "mobile-buttons">
+    <button class = "info__mob" onclick =  "my_click1();" id = "button-click"> Overview</button>
+    <button class = "info__mob" onclick = "my_click2();">Structure</button>
+    <button  class = "info__mob" onclick =  "my_click3();"> Surface </button>
+  </div>
+<!---------------------------------------------------------------->
+
+
+<!---------------------------Main-mobile------------------------------------->
+
+<main>
+  <div class="main__inner">
+    <div class="picture__mobile">
+      <img class = "planet" src = "https://planets-fact-site-nu.vercel.app/assets/planet-earth.svg" width="200px" height="200px" id = "image_mob">
+      <img class = "surface_mob" src = "https://planets-fact-site-nu.vercel.app/assets/geology-earth.png" width = "100px" height = "100px">
+    </div>
+    <div class="text__mobile">
+      <h1 class = "hero">Earth</h1>
+      <p id = "modify_mob">
+        Third planet from the Sun and the only known planet to harbor life. 
+        About 29.2% of Earth's surface is land with remaining 70.8% is 
+        covered with water. Earth's distance from the Sun, physical properties 
+        and geological history have allowed life to evolve and thrive.</p>
+
+       <p>Source:  <a class = "wiki color_earth" href = "https://en.wikipedia.org/wiki/Earth" id = "link"> Wikipedia <svg class = "turn_white" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="var(--secondary-color)" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".75"/></svg></a></p>
+    </div>
+  </div>
+  <section class = "statistics__mobile">
+    <div class="statistics__inner">
+      <div class="stats">
+        <span class = "topic">Rotation Time</span>
+        <span class = "discription">0.99 Days</span></div>
+      <div class="stats">
+        <span class = "topic">Revolution Time</span>
+        <span class = "discription">365.26 Days</span></div>
+      <div class="stats"><span class = "topic">Radius</span>
+        <span class = "discription">6,371 KM</span>
+      </div>
+      <div class="stats"> <span class = "topic">Average Temp.</span>
+        <span class = "discription">16°c</span>
+      </div>
+    </div>
+</section>
+<div class="sidebar">
+  <div class="sidebar_inner">
+    <ul>
+      <a href = "index.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-mercury.svg" width="45px" height="45px"><span>Mercury</span></li></a>
+      <a href = "venus.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-venus.svg" width="45px" height="45px"><span>Venus</span></li></a>
+      <a href = "earth.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-earth.svg" width="45px" height="45px"><span>Earth</span></li></a>
+      <a href = "mars.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-mars.svg" width="45px" height="45px"><span>Mars</span></li></a>
+      <a href = "jupiter.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-jupiter.svg" width="45px" height="45px"><span>Jupiter</span></li></a>
+      <a href = "saturn.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-saturn.svg" width="45px" height="45px"><span>Saturn</span></li></a>
+      <a href = "uranus.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-uranus.svg" width="45px" height="45px"><span>Uranus</span></li></a>
+      <a href = "neptune.html"><li><img src = "https://planets-fact-site-nu.vercel.app/assets/planet-neptune.svg" width="45px" height="45px"><span>Neptune</span></li></a>
+    <ul>
+  </div>
+</div>
+</main>
+
+
+<!---------------------------------------------------------------------------->
+<!-- MAIN -->
+
+  <section class="main">
+  <div class="container">
+    <div class="section__inner">
+      <div class="picture">
+        <img class = "planet" src = "https://planets-fact-site-nu.vercel.app/assets/planet-earth.svg" width="500px" height="500px" id = "image">
+        <img class = "planet-surface" src = "https://planets-fact-site-nu.vercel.app/assets/geology-earth.png" width = "200px" height = "200px">
+      </div>
+      <div class="text">
+        <h1>Earth</h1>
+        <p id = "modify">
+          Third planet from the Sun and the only known planet to harbor life. 
+          About 29.2% of Earth's surface is land with remaining 70.8% is 
+          covered with water. Earth's distance from the Sun, physical properties 
+          and geological history have allowed life to evolve and thrive.</p>
+
+         <p>Source:  <a class = "wiki" href = "https://en.wikipedia.org/wiki/Earth" id = "link"> Wikipedia <svg class = "turn_white" xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path fill="var(--secondary-color)" d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z" opacity=".75"/></svg></a></p>
+
+        <div class="buttons">
+          <button class = "overview" onclick =  "my_click1();" id = "button-click"> Overview</button>
+          <button class = "structure" onclick = "my_click2();"> Internal Structure</button>
+          <button  class = "surface" onclick =  "my_click3();"> Surface Geology</button>
+        </div>
+      </div>
+    </div>
+
+    <section class = "statistics">
+        <div class="statistics__inner">
+          <div class="stats">
+            <span class = "topic">Rotation Time</span>
+            <span class = "discription">0.99 Days</span></div>
+          <div class="stats">
+            <span class = "topic">Revolution Time</span>
+            <span class = "discription">365.26 Days</span></div>
+          <div class="stats"><span class = "topic">Radius</span>
+            <span class = "discription">6,371 KM</span>
+          </div>
+          <div class="stats"> <span class = "topic">Average Temp.</span>
+            <span class = "discription">16°c</span>
+          </div>
+        </div>
+    </section>
+  </div>
+  </section>
+  
+
+
+<!--
+  <div class="sidebar">
+    <div class="menu__mobile">
+        <a href = "#home" onclick="toggleMenu();"><span><img src = "/starter-code/assets/planet-earth.svg" width = "30px" height = "30px"></span></a>
+        <a href = "#about" onclick="toggleMenu();">About</a>
+        <a href = "#services" onclick="toggleMenu();">Services</a>
+        <a href = "#" onclick="toggleMenu();">Work</a>
+        <a href = "#" onclick="toggleMenu();">Contact</a>
+    <div>
+
+    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="trash">
+  Earth
+
+  <!-- Overview Content Start -->
+
+  Third planet from the Sun and the only known planet to harbor life. 
+  About 29.2% of Earth's surface is land with remaining 70.8% is 
+  covered with water. Earth's distance from the Sun, physical properties 
+  and geological history have allowed life to evolve and thrive.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth -->
+
+  <!-- Overview Content End -->
+
+  <!-- Internal Structure Content Start -->
+
+  Earth's interior, like that of the other terrestrial planets, is divided 
+  into layers by their chemical or physical (rheological) properties. The 
+  outer layer is a chemically distinct silicate solid crust, which is 
+  underlain by a highly viscous solid mantle.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Internal_structure -->
+
+  <!-- Internal Structure Content End -->
+
+  <!-- Surface Geology Content Start -->
+
+  The total surface area of Earth is about 510 million km2. The continental 
+  crust consists of lower density material such as the igneous rocks granite 
+  and andesite. Less common is basalt, a denser volcanic rock that is the 
+  primary constituent of the ocean floors.
+
+  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Surface -->
+
+  <!-- Surface Geology Content End -->
+
+  01 Overview
+  02 Internal Structure
+  03 Surface Geology
+
+  Rotation Time
+  0.99 Days
+
+  Revolution Time
+  365.26 Days
+
+  Radius
+  6,371 KM
+
+  Average Temp.
+  16°c
+</div>
+<script>
+/* PC */
+function my_click1()
+            {
+            document.getElementById("image").src="https://planets-fact-site-nu.vercel.app/assets/planet-earth.svg";
+            document.getElementById("image_mob").src="https://planets-fact-site-nu.vercel.app/assets/planet-earth.svg";
+            document.getElementById('modify').innerHTML="Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive."
+            document.getElementById('modify_mob').innerHTML="Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive."
+            document.getElementById('link').href = "https://en.wikipedia.org/wiki/Earth"
+            };
+function my_click2()
+            {
+            
+            document.getElementById("image").src="https://planets-fact-site-nu.vercel.app/assets/planet-earth-internal.svg";
+            document.getElementById("image_mob").src="https://planets-fact-site-nu.vercel.app/assets/planet-earth-internal.svg";
+            document.getElementById('modify').innerHTML="Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle."
+            document.getElementById('modify_mob').innerHTML="Earth's interior, like that of the other terrestrial planets, is divided into layers by their chemical or physical (rheological) properties. The outer layer is a chemically distinct silicate solid crust, which is underlain by a highly viscous solid mantle."
+            document.getElementById('link').href = "https://en.wikipedia.org/wiki/Earth#Internal_structure";
+            };
+function my_click3()
+            {
+              const toggleMenu = document.querySelector(".planet-surface");
+              toggleMenu.classList.toggle("show")
+              const button_click = document.querySelector(".surface_mob");
+              button_click.classList.toggle("active");
+              document.getElementById('modify').innerHTML="The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors."
+              document.getElementById('modify_mob').innerHTML="The total surface area of Earth is about 510 million km2. The continental crust consists of lower density material such as the igneous rocks granite and andesite. Less common is basalt, a denser volcanic rock that is the primary constituent of the ocean floors."
+            }
+function toggleMenu(){
+            const sidebar= document.querySelector(".sidebar");
+            sidebar.classList.toggle("active")
+            const overflow = document.querySelector(".body")
+            overflow.classList.toggle("overflow-y")
+        }
+
+/* Mobile */
+</script>
+</body>
+</html>
